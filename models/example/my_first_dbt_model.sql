@@ -9,7 +9,7 @@
 
 
 
-{{ config(materialized='table',
+{{ config(materialized='view',
             query_tag = 'FROM DBT') }}
 
 with source_data as (
@@ -18,7 +18,7 @@ with source_data as (
     union all
     select 2 as id
     union all
-    select 3 as id
+    select 3 as id, 
     union all 
     select null as id
 
