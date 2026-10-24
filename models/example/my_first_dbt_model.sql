@@ -10,6 +10,9 @@
 
 
 {{ config(materialized='view',
+persist_docs={
+        "relation": true,
+        "columns": true },
             query_tag = 'FROM DBT') }}
 
 with source_data as (
