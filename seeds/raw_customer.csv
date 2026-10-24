@@ -1,0 +1,5 @@
+customer_id,customer_name,email,city,updated_at
+1,Ravi Kumar ,ravi.kumar@example.com,Hyderabad,2026-08-05 09:00:00
+2, Anita Sharma,anita@example.com,Pune,2026-08-05 09:00:00
+5, Divya Reddy,divya@example.com,Delhi,2026-08-05 09:00:00
+3,ABC ,ABC@example.com,Hyderabad,2026-08-05 10:00:00
