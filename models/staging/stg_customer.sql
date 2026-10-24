@@ -1,0 +1,9 @@
+
+
+SELECT 
+CUSTOMER_ID, 
+LTRIM(CUSTOMER_NAME) AS CUSTOMER_NAME , 
+lower(trim(EMAIL)) AS EMAIL, 
+CITY, 
+UPDATED_AT
+FROM {{ ref('raw_customer') }}

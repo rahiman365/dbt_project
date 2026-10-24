@@ -1,0 +1,9 @@
+
+version: 2
+
+models:
+    - name: stg_customer
+      description: "This is coming from SEEDS to STG CUSTOMER"
+      columns:
+          - name: customer_id
+            description: "The primary key for this table"
