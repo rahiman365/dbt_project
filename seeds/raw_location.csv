@@ -1,0 +1,5 @@
+location_id,location_name,city,state,region,updated_at
+201,Warehouse A,Hyderabad,Telangana,South,2026-08-01 10:00:00
+202,Warehouse B,Mumbai,Maharashtra,West,2026-08-06 11:00:00
+203,Warehouse C,Chennai,Tamil Nadu,South,2026-08-01 10:00:00
+204,Warehouse D,Gurugram,Haryana,North,2026-08-06 11:00:00
