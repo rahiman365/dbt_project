@@ -3,7 +3,6 @@ select
     order_id,
     customer_id,
     order_amount,
-    cast(order_date as date) as order_date
+    order_date::date as order_date
 
-from {{ source('raw_source', 'raw_orders_new') }}
-
+from {{ ref('raw_orders') }}
