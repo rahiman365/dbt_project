@@ -2,8 +2,34 @@
 version: 2
 
 models:
-    - name: stg_customer
-      description: "This is coming from SEEDS to STG CUSTOMER"
+    - name: stg_page_views
+      description: "Cleaned page view events"
       columns:
-          - name: customer_id
-            description: "The primary key for this table"
+          - name: page_view_id
+            tests:
+                - unique
+                - not_null
+          - name: page
+            tests:
+                - accepted_values:
+                    arguments:
+                      values: ['home', 'pricing', 'docs']
+          - name: user_id
+            tests:
+                - not_null
+                - relationships:
+                    arguments:
+                      to: ref('dim_users')
+                      field: user_id
+
+    - name: stg_page_views_macro
+      description: "Cleaned page view events"
+      columns:
+          - name: page_view_id
+            tests:
+                - unique
+                - not_null
+          - name: page
+            tests:
+                - valid_page
+            
