@@ -12,3 +12,4 @@ page_view_id,session_id,user_id,page,viewed_at
 11,s7,u1,home,2026-10-27 07:30:00
 12,s8,u2,home,2026-10-27 11:00:00
 13,s8,u4,news,2026-10-27 11:30:00
+1,s1,u1,home1,2026-10-24 09:01:00
